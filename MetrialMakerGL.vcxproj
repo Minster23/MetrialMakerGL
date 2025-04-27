@@ -81,7 +81,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;"D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\examples\libs\glfw\lib-vc2010-64\glfw3.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -99,7 +99,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;"D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\examples\libs\glfw\lib-vc2010-64\glfw3.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -113,7 +113,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;"D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\examples\libs\glfw\lib-vc2010-64\glfw3.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,18 +131,32 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;"D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\examples\libs\glfw\lib-vc2010-64\glfw3.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\athilah\Downloads\glad\glad.c" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="MetrialMakerGL.cpp" />
+    <ClCompile Include="third-party\imgui\imgui.cpp" />
+    <ClCompile Include="third-party\imgui\imgui_demo.cpp" />
+    <ClCompile Include="third-party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="third-party\imgui\imgui_tables.cpp" />
+    <ClCompile Include="third-party\imgui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\athilah\Downloads\glad\glad.h" />
     <ClInclude Include="C:\Users\athilah\Downloads\glad\khrplatform.h" />
     <ClInclude Include="Core.hpp" />
+    <ClInclude Include="third-party\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl2.h" />
+    <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="third-party\imgui\imconfig.h" />
+    <ClInclude Include="third-party\imgui\imgui.h" />
+    <ClInclude Include="third-party\imgui\imgui_internal.h" />
+    <ClInclude Include="third-party\imgui\imstb_rectpack.h" />
+    <ClInclude Include="third-party\imgui\imstb_textedit.h" />
+    <ClInclude Include="third-party\imgui\imstb_truetype.h" />
     <ClInclude Include="third-party\stb-master\stb_image.h" />
     <ClInclude Include="third-party\stb-master\stb_textedit.h" />
     <ClInclude Include="third-party\stb-master\stb_tilemap_editor.h" />
