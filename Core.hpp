@@ -1,50 +1,28 @@
 #pragma once
 
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
-
 #include <glad.h>
-#include <iostream>
-#include <string>
 #include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include <string>
+#include <iostream>
 
-class core {
-	//Function
+// ImGui
+#include "imgui.h"
+#include "backends/imgui_impl_glfw.h"
+#include "backends/imgui_impl_opengl3.h"
+
+class Core {
 public:
-	core();
-	~core();
-	bool initialize();
-	void processInput(GLFWwindow* window);
-	void update();
-	void render();
-	void cleanup();
+    Core();
+    ~Core();
 
-	std::string loadShaderSource(const char* shaderPath);
+    bool initialize();
+    void run();
+    void cleanup();
 
-	static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
-	//Variables
 private:
-
-	//Variable yang nanti dipake
-	GLuint shaderProgram;
-	GLuint VAO1, VBO1, instanceVBO;
-	GLuint createShaderProgram(const char* vertexPath, const char* fragmentPath);
-
-	//Settingan kamera
-	static glm::vec3 cameraPos;
-	static glm::vec3 cameraFront;
-	static glm::vec3 cameraUp;
-
-
-	static float yaw;
-	static float pitch;
-	static float lastX;
-	static float lastY;
-	static bool firstMouse;
-	static float fov;
-	static float deltaTime;
-	static float lastFrame;
+    //IMGUI
+	unsigned int ver = 1;
+	int width = 1280, height = 720;
+    GLFWwindow* window;
+    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 };

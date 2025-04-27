@@ -76,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,7 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\athilah\Downloads\glad;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\stb-master;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui;D:\piesko\belajar vulkan\MetrialMakerGL\third-party\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,7 +137,10 @@
   <ItemGroup>
     <ClCompile Include="C:\Users\athilah\Downloads\glad\glad.c" />
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Interface.cpp" />
     <ClCompile Include="MetrialMakerGL.cpp" />
+    <ClCompile Include="third-party\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="third-party\imgui\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="third-party\imgui\imgui.cpp" />
     <ClCompile Include="third-party\imgui\imgui_demo.cpp" />
     <ClCompile Include="third-party\imgui\imgui_draw.cpp" />
@@ -148,8 +151,8 @@
     <ClInclude Include="C:\Users\athilah\Downloads\glad\glad.h" />
     <ClInclude Include="C:\Users\athilah\Downloads\glad\khrplatform.h" />
     <ClInclude Include="Core.hpp" />
+    <ClInclude Include="Interface.h" />
     <ClInclude Include="third-party\imgui\backends\imgui_impl_glfw.h" />
-    <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl2.h" />
     <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl3.h" />
     <ClInclude Include="third-party\imgui\imconfig.h" />
     <ClInclude Include="third-party\imgui\imgui.h" />

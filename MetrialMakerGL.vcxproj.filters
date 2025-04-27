@@ -22,6 +22,9 @@
     <Filter Include="Source Files\third-party\imgui">
       <UniqueIdentifier>{eaea60c9-d769-49de-beda-f079be505b74}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\core\interface">
+      <UniqueIdentifier>{cae406fe-7b78-424c-aa11-31f751fdb8a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MetrialMakerGL.cpp">
@@ -47,6 +50,15 @@
     </ClCompile>
     <ClCompile Include="third-party\imgui\imgui_widgets.cpp">
       <Filter>Source Files\third-party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>Source Files\third-party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\third-party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Source Files\core\interface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,11 +101,11 @@
     <ClInclude Include="third-party\imgui\backends\imgui_impl_glfw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="third-party\imgui\backends\imgui_impl_opengl3.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Source Files\core\interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
